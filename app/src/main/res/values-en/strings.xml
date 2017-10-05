@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LoginLinearLayout</string>
+    <string name="tvSignIn">Sign In</string>
+    <string name="tvUser">User Name/ e mail address</string>
+    <string name="tvPassword">Password</string>
+    <string name="cbRemember">Remember me</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="btnGoogleSign">Google</string>
+    <string name="btnFacebookSign">Log in with Facebook</string>
+</resources>
