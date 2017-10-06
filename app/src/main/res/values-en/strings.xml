@@ -5,7 +5,8 @@
     <string name="tvUser">User Name/ e mail address</string>
     <string name="tvPassword">Password</string>
     <string name="cbRemember">Remember me</string>
-    <string name="btnSignUp">Sign Up</string>
+    <string name="btnSignUp"><u>Sign Up</u></string>
     <string name="btnGoogleSign">Google</string>
     <string name="btnFacebookSign">Log in with Facebook</string>
+    <string name="tvSignUp"><u>Sign Up</u></string>
 </resources>

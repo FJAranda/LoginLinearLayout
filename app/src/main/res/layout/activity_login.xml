@@ -25,9 +25,11 @@
         />
     <EditText
         android:id="@+id/etUser"
+        android:background="@drawable/shape_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text" />
+        android:inputType="text"
+        style="@style/LoginEditText"/>
     <TextView
         android:id="@+id/tvPassword"
         android:layout_width="match_parent"
@@ -38,9 +40,11 @@
         />
     <EditText
         android:id="@+id/etPassword"
+        android:background="@drawable/shape_edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        style="@style/LoginEditText"/>
     <LinearLayout
         android:id="@+id/llSignOpt"
         android:layout_width="match_parent"
@@ -49,20 +53,28 @@
         >
         <CheckBox
             android:id="@+id/cbRemember"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/cbRemember"/>
+            android:text="@string/cbRemember"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:theme="@style/LoginCheckBox"
+            />
         <TextView
             android:id="@+id/tvSignUp"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/tvSignUp"
+            android:gravity="right"
             android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"/>
     </LinearLayout>
     <Button
         android:layout_gravity="center_horizontal"
+        style="@style/Widget.Button.Transparent"
         android:id="@+id/btnSignIn"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/btnSignIn_margin"
         android:background="@color/colorFacebook"
@@ -70,19 +82,20 @@
 
     <Button
         android:id="@+id/btnGoogleSign"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@style/Widget.Button.Transparent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/google"
-        android:text="@string/btnGoogleSign"
-        android:background="@color/colorGoogle"
         android:layout_marginBottom="@dimen/ll_sign_options_padding"
-        />
+        android:background="@color/colorGoogle"
+        android:drawableStart="@drawable/google"
+        android:text="@string/btnGoogleSign" />
+
     <Button
         android:id="@+id/btnFacebookSign"
+        style="@style/Widget.Button.Transparent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnFacebookSign"
         android:background="@color/colorFacebook"
-        android:drawableStart="@drawable/ic_facebook"/>
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="@string/btnFacebookSign" />
 </LinearLayout>
